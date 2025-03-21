@@ -81,7 +81,7 @@ export class EditProfile extends Component {
         city: values.city,
         postcode: values.postcode,
       });
-
+      message.success({ content: "Done!", key, duration: 2 });
       this.props.navigate("/app/clients/list");
     }, 1000);
   };
