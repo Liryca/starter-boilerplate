@@ -37,7 +37,6 @@ export class ClientList extends Component {
       });
     } catch (error) {
       console.error("Ошибка при загрузке данных:", error);
-      message.error("Не удалось загрузить данные");
       this.setState({ loading: false });
     }
   };
